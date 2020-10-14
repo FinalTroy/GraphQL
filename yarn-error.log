@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe E:\Software\Yarn\bin\yarn.js add @chakra-ui/core @emotion/core @emotion/styled FE
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\wamp64\bin\php\php7.1.9;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\System32\OpenSSH\;E:\Software\Microsoft VS Code\bin;E:\Software\Git\cmd;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\Software\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Troy\AppData\Local\Microsoft\WindowsApps;C:\Users\Troy\AppData\Roaming\Composer\vendor\bin;C:\Users\Troy\AppData\Local\Yarn\bin;C:\Users\Troy\AppData\Roaming\npm;C:\Users\Troy\AppData\Local\Microsoft\WindowsApps
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  14.11.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/FE: Not found
+      at Request.params.callback [as _callback] (E:\Software\Yarn\lib\cli.js:66035:18)
+      at Request.self.callback (E:\Software\Yarn\lib\cli.js:140564:22)
+      at Request.emit (events.js:314:20)
+      at Request.<anonymous> (E:\Software\Yarn\lib\cli.js:141536:10)
+      at Request.emit (events.js:314:20)
+      at IncomingMessage.<anonymous> (E:\Software\Yarn\lib\cli.js:141458:12)
+      at Object.onceWrapper (events.js:420:28)
+      at IncomingMessage.emit (events.js:326:22)
+      at endReadableNT (_stream_readable.js:1252:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
