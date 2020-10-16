@@ -22,6 +22,6 @@
     "jsx": "preserve",
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "../BE/src/migrations/1602768528888-FakePosts.ts"],
   "exclude": ["node_modules"]
 }
