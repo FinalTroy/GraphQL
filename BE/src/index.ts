@@ -13,8 +13,10 @@ import cors from "cors";
 import { createConnection } from "typeorm";
 import { Post } from "./entities/Post";
 import { User } from "./entities/User";
-import path from 'path'
+import path from "path";
 import { Updoot } from "./entities/Updoot";
+import { createUserLoader } from "./utils/createUserLoader";
+import { createUpdootLoader } from "./utils/createUpdootLoader";
 const main = async () => {
   const conn = await createConnection({
     type: "postgres",
@@ -30,7 +32,7 @@ const main = async () => {
   // Delete whole database
   // await Post.delete({})
   const app = express();
- 
+
   const RedisStore = connectRedis(session);
   const redis = new Redis();
   app.use(
@@ -63,7 +65,13 @@ const main = async () => {
       resolvers: [HelloResolver, PostResorver, UserResolver],
       validate: false,
     }),
-    context: ({ req, res }) => ({ req, res, redis }),
+    context: ({ req, res }) => ({
+      req,
+      res,
+      redis,
+      userLoader: createUserLoader(),
+      updootLoader: createUpdootLoader(),
+    }),
   });
 
   apolloServer.applyMiddleware({
